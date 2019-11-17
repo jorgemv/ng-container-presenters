@@ -122,6 +122,9 @@ export class ParticipantComponent implements OnInit, OnDestroy {
     this.PARTICIPANT_SERVICE.currentParticipant = participant;
   }
 
+  /**
+   * Saves current participant from form data.
+   */
   onSubmit() {
     this.PARTICIPANT_SERVICE.consolidate(this.participantForm.value);
   }
