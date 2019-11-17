@@ -1,4 +1,4 @@
-# ng-container-presenters!
+# ng-container-presenters
 ### Getting started
 
 Container-Presenters pattern example built in Angular framework.
