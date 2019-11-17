@@ -1,0 +1,31 @@
+{
+  "participants": [
+    {
+      "id": 1,
+      "basic": {
+        "firstName": "Jorge",
+        "lastName": "Martínez",
+        "age": 33,
+        "gender": "male",
+        "email": "jorge.martinez@lognext.es",
+        "phone": {
+          "areaCode": 34,
+          "phoneNumber": 666666666
+        }
+      },
+      "address": {
+        "street": "Santa Engracia",
+        "number": "20",
+        "postal": 28010
+      },
+      "creditCards": [
+        {
+          "cardAlias": "My card",
+          "cardHolderName": "Jorge Martínez",
+          "cardNumber": 5371315863241792,
+          "ccv": 440
+        }
+      ]
+    }
+  ]
+}

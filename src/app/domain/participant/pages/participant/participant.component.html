@@ -1,0 +1,45 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="participantForm" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+
+      <div class="card">
+        <div class="card-header">
+          Participant summary
+        </div>
+        <div class="card-body">
+          <app-participant-summary [currentParticipant]="currentParticipant"></app-participant-summary>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">
+          Basic Info
+        </div>
+        <div class="card-body">
+          <app-participant-basic-info [basicFormGroup]="participantForm.get('basic')"></app-participant-basic-info>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">
+          Address
+        </div>
+        <div class="card-body">
+          <app-participant-address [addressFormGroup]="participantForm.get('address')"></app-participant-address>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">
+          Credit Cards
+        </div>
+        <div class="card-body">
+          <app-participant-credit-cards [creditCardsFormArray]="participantForm.get('creditCards')"></app-participant-credit-cards>
+        </div>
+      </div>
+      <div class="mt-3">
+        <button type="submit" class="btn btn-primary" [disabled]="!participantForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
