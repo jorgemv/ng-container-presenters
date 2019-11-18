@@ -87,7 +87,7 @@ export class ParticipantService {
    * Updates the current participant.
    * @param participant New current participant
    */
-  updateCurrentParticipant(participant: Participant) {
+  private updateCurrentParticipant(participant: Participant) {
     this.currentParticipant = participant;
     this.unsubscribe.next();
     this.unsubscribe.complete();
