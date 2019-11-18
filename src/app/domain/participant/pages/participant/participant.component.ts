@@ -19,7 +19,7 @@ import { ParticipantService } from '../../services/participant.service';
 })
 export class ParticipantComponent implements OnInit, OnDestroy {
 
-  participantForm: FormGroup;
+  public participantForm: FormGroup;
 
   private _unsubscribe: Subject<void> = new Subject(); // Destroy subscription trigger.
 
