@@ -11,16 +11,12 @@ export class ParticipantSummaryComponent implements OnChanges {
 
   @Input() currentParticipant: Participant;
 
-  private _fullAddress = '';
+  public fullAddress: string;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.currentParticipant && this.currentParticipant.address) {
-      this._fullAddress = `${ this.currentParticipant.address.street }, ${ this.currentParticipant.address.number }, ${ this.currentParticipant.address.postal }`;
+      this.fullAddress = `${ this.currentParticipant.address.street }, ${ this.currentParticipant.address.number }, ${ this.currentParticipant.address.postal }`;
     }
-  }
-
-  get fullAddress(): string {
-    return this._fullAddress;
   }
 
 }
