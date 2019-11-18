@@ -7,7 +7,7 @@ import { Participant } from '../../models/entities/participant.model';
 
 // RxJS stuff.
 import { Subject } from 'rxjs';
-import { takeUntil} from 'rxjs/operators';
+import { takeUntil } from 'rxjs/operators';
 
 // Services.
 import { ParticipantService } from '../../services/participant.service';
