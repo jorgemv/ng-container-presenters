@@ -7,6 +7,6 @@ Container-Presenters pattern example built in Angular framework.
 $ git clone https://github.com/jorgemv/ng-container-presenters.git
 $ npm install
 $ npm install -g json-server
-$ json-server --watch api/db // inside root folder
+$ json-server --watch api/db.json // inside root folder
 $ ng serve
 ```
