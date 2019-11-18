@@ -39,7 +39,7 @@ export class ParticipantComponent implements OnInit, OnDestroy {
 
   /** Getters and setters */
 
-  get currentParticipant(): Participant {
+  public get currentParticipant(): Participant {
     // Using spread operator because objects/arrays will be passed by reference
     // (not by value) in presenters OnPush change detection strategy.
     return { ...this.PARTICIPANT_SERVICE.currentParticipant };
@@ -125,7 +125,7 @@ export class ParticipantComponent implements OnInit, OnDestroy {
   /**
    * Saves current participant from the form data.
    */
-  onSubmit() {
+  public onSubmit() {
     this.PARTICIPANT_SERVICE.consolidate(this.participantForm.value);
   }
 
