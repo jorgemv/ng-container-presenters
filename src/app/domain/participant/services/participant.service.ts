@@ -74,7 +74,7 @@ export class ParticipantService {
       .pipe(takeUntil(this.unsubscribe)) // Indicating when subscription will be destroyed.
         .subscribe((response: Participant) => this.updateCurrentParticipant(response));
     } else {
-      // Hack: json-server aren't able to generate an ID in POST requests so we are generating by ourselves.
+      // Hack: json-server aren't able to generate an ID in POST requests so we are generating it by ourselves.
       participant.id = RandomInteger.getRandomInt(2, 100000);
 
       this.create(participant)
